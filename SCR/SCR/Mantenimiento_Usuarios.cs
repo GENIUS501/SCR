@@ -170,7 +170,7 @@ namespace SCR
                                     DialogResult dr = MessageBox.Show("Realmente desea eliminar el Usuario?", "Eliminar el Usuario", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                                     if (dr == DialogResult.Yes)
                                     {
-                                        FilasAfectadas = Negocios.Eliminar_Usuario(Usu.Nombre_Usuario, "User");
+                                        FilasAfectadas = Negocios.Eliminar_Usuario(Usu.Nombre_Usuario, User);
                                         if (FilasAfectadas > 0)
                                         {
                                             MessageBox.Show("Usuario Eliminado exitosamente!!!", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
