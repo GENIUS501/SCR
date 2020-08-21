@@ -1,0 +1,12 @@
+Roles 1
+Usuarios 2
+Productos 3
+Punto_Venta 4
+Supervisores 5
+Proceso Faltante Productos 6
+Proceso vencimiento Productos 7
+Reporte vencimiento Productos 8
+Reporte faltante de productos 9
+Reporte de Punto de venta 10
+Bitacora Sesiones 11
+Bitacora Movimiento 12

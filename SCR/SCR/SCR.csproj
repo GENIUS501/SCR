@@ -1,0 +1,487 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B2083863-3C0F-4E94-B480-9ABFDE05008A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SCR</RootNamespace>
+    <AssemblyName>SCR</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bitacora_Ingreso_Salida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bitacora_Ingreso_Salida.Designer.cs">
+      <DependentUpon>Bitacora_Ingreso_Salida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bitacora_Movimientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bitacora_Movimientos.Designer.cs">
+      <DependentUpon>Bitacora_Movimientos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lista_Productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lista_Productos.Designer.cs">
+      <DependentUpon>Lista_Productos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lista_Punto_Venta_Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lista_Punto_Venta_Cliente.Designer.cs">
+      <DependentUpon>Lista_Punto_Venta_Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lista_Roles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lista_Roles.Designer.cs">
+      <DependentUpon>Lista_Roles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lista_Supervisores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lista_Supervisores.Designer.cs">
+      <DependentUpon>Lista_Supervisores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lista_Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lista_Usuarios.Designer.cs">
+      <DependentUpon>Lista_Usuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lista_Zonas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lista_Zonas.Designer.cs">
+      <DependentUpon>Lista_Zonas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento_Productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento_Productos.Designer.cs">
+      <DependentUpon>Mantenimiento_Productos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento_Punto_Venta_Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento_Punto_Venta_Cliente.Designer.cs">
+      <DependentUpon>Mantenimiento_Punto_Venta_Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento_Roles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento_Roles.Designer.cs">
+      <DependentUpon>Mantenimiento_Roles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento_Supervisores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento_Supervisores.Designer.cs">
+      <DependentUpon>Mantenimiento_Supervisores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento_Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento_Usuarios.Designer.cs">
+      <DependentUpon>Mantenimiento_Usuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento_Zonas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento_Zonas.Designer.cs">
+      <DependentUpon>Mantenimiento_Zonas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proceso_Faltante_Productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proceso_Faltante_Productos.Designer.cs">
+      <DependentUpon>Proceso_Faltante_Productos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proceso_Vencimiento_Productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proceso_Vencimiento_Productos.Designer.cs">
+      <DependentUpon>Proceso_Vencimiento_Productos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reporte-Vencimiento-producto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte-Vencimiento-producto.Designer.cs">
+      <DependentUpon>Reporte-Vencimiento-producto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte_Faltante_Productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte_Faltante_Productos.Designer.cs">
+      <DependentUpon>Reporte_Faltante_Productos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte_Punto_Venta_Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte_Punto_Venta_Cliente.Designer.cs">
+      <DependentUpon>Reporte_Punto_Venta_Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SCRDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SCRDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Vencimiento.cs">
+      <DependentUpon>Vencimiento.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Vencimiento.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Vencimiento.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Visor_Cliente_Cedula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visor_Cliente_Cedula.Designer.cs">
+      <DependentUpon>Visor_Cliente_Cedula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visor_Cliente_Nombre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visor_Cliente_Nombre.Designer.cs">
+      <DependentUpon>Visor_Cliente_Nombre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visor_Faltantes_Cedula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visor_Faltantes_Cedula.Designer.cs">
+      <DependentUpon>Visor_Faltantes_Cedula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visor_Faltantes_Codigo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visor_Faltantes_Codigo.Designer.cs">
+      <DependentUpon>Visor_Faltantes_Codigo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visor_faltantes_fecha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visor_faltantes_fecha.Designer.cs">
+      <DependentUpon>Visor_faltantes_fecha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visor_Movimientos_Accion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visor_Movimientos_Accion.Designer.cs">
+      <DependentUpon>Visor_Movimientos_Accion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visor_Movimientos_Fechas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visor_Movimientos_Fechas.Designer.cs">
+      <DependentUpon>Visor_Movimientos_Fechas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visor_Movimientos_Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visor_Movimientos_Usuario.Designer.cs">
+      <DependentUpon>Visor_Movimientos_Usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visor_Faltantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visor_Faltantes.Designer.cs">
+      <DependentUpon>Visor_Faltantes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visor_Sessiones_Fechas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visor_Sessiones_Fechas.Designer.cs">
+      <DependentUpon>Visor_Sessiones_Fechas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visor_Sessiones_Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visor_Sessiones_Usuario.Designer.cs">
+      <DependentUpon>Visor_Sessiones_Usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visor_Vencimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visor_Vencimiento.Designer.cs">
+      <DependentUpon>Visor_Vencimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visor_Vencimientos_Reporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visor_Vencimientos_Reporte.Designer.cs">
+      <DependentUpon>Visor_Vencimientos_Reporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visor_Vencimiento_Supervisor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visor_Vencimiento_Supervisor.Designer.cs">
+      <DependentUpon>Visor_Vencimiento_Supervisor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visor_Vencimieto_fecha_vencimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visor_Vencimieto_fecha_vencimiento.Designer.cs">
+      <DependentUpon>Visor_Vencimieto_fecha_vencimiento.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bitacora_Ingreso_Salida.resx">
+      <DependentUpon>Bitacora_Ingreso_Salida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bitacora_Movimientos.resx">
+      <DependentUpon>Bitacora_Movimientos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lista_Productos.resx">
+      <DependentUpon>Lista_Productos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lista_Punto_Venta_Cliente.resx">
+      <DependentUpon>Lista_Punto_Venta_Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lista_Roles.resx">
+      <DependentUpon>Lista_Roles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lista_Supervisores.resx">
+      <DependentUpon>Lista_Supervisores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lista_Usuarios.resx">
+      <DependentUpon>Lista_Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lista_Zonas.resx">
+      <DependentUpon>Lista_Zonas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento_Productos.resx">
+      <DependentUpon>Mantenimiento_Productos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento_Punto_Venta_Cliente.resx">
+      <DependentUpon>Mantenimiento_Punto_Venta_Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento_Roles.resx">
+      <DependentUpon>Mantenimiento_Roles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento_Supervisores.resx">
+      <DependentUpon>Mantenimiento_Supervisores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento_Usuarios.resx">
+      <DependentUpon>Mantenimiento_Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento_Zonas.resx">
+      <DependentUpon>Mantenimiento_Zonas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proceso_Faltante_Productos.resx">
+      <DependentUpon>Proceso_Faltante_Productos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proceso_Vencimiento_Productos.resx">
+      <DependentUpon>Proceso_Vencimiento_Productos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reporte-Vencimiento-producto.resx">
+      <DependentUpon>Reporte-Vencimiento-producto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte_Faltante_Productos.resx">
+      <DependentUpon>Reporte_Faltante_Productos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte_Punto_Venta_Cliente.resx">
+      <DependentUpon>Reporte_Punto_Venta_Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt_Cliente_Cedula.rdlc" />
+    <EmbeddedResource Include="Rpt_Cliente_Nombre.rdlc" />
+    <EmbeddedResource Include="Rpt_Faltantes_Cedula.rdlc" />
+    <EmbeddedResource Include="Rpt_Faltantes_Codigo.rdlc" />
+    <EmbeddedResource Include="Rpt_faltantes_fecha.rdlc" />
+    <EmbeddedResource Include="Rpt_Faltantes_Id.rdlc" />
+    <EmbeddedResource Include="Rpt_Movimientos_Accion.rdlc" />
+    <EmbeddedResource Include="Rpt_Movimientos_Fechas.rdlc" />
+    <EmbeddedResource Include="Rpt_Movimientos_Usuarios.rdlc" />
+    <EmbeddedResource Include="Rpt_Sessiones_Fechas.rdlc" />
+    <EmbeddedResource Include="Rpt_Sessiones_Usuario.rdlc" />
+    <EmbeddedResource Include="Rpt_Vencimiento.rdlc" />
+    <EmbeddedResource Include="Rpt_vencimiento_fecha_reporte.rdlc" />
+    <EmbeddedResource Include="Rpt_Vencimiento_Fecha_Vencimiento.rdlc" />
+    <EmbeddedResource Include="Rpt_Vencimiento_Supervisor.rdlc" />
+    <EmbeddedResource Include="Visor_Cliente_Cedula.resx">
+      <DependentUpon>Visor_Cliente_Cedula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visor_Cliente_Nombre.resx">
+      <DependentUpon>Visor_Cliente_Nombre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visor_Faltantes.resx">
+      <DependentUpon>Visor_Faltantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visor_Faltantes_Cedula.resx">
+      <DependentUpon>Visor_Faltantes_Cedula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visor_Faltantes_Codigo.resx">
+      <DependentUpon>Visor_Faltantes_Codigo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visor_faltantes_fecha.resx">
+      <DependentUpon>Visor_faltantes_fecha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visor_Movimientos_Accion.resx">
+      <DependentUpon>Visor_Movimientos_Accion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visor_Movimientos_Fechas.resx">
+      <DependentUpon>Visor_Movimientos_Fechas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visor_Movimientos_Usuario.resx">
+      <DependentUpon>Visor_Movimientos_Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visor_Sessiones_Fechas.resx">
+      <DependentUpon>Visor_Sessiones_Fechas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visor_Sessiones_Usuario.resx">
+      <DependentUpon>Visor_Sessiones_Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visor_Vencimiento.resx">
+      <DependentUpon>Visor_Vencimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visor_Vencimientos_Reporte.resx">
+      <DependentUpon>Visor_Vencimientos_Reporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visor_Vencimiento_Supervisor.resx">
+      <DependentUpon>Visor_Vencimiento_Supervisor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visor_Vencimieto_fecha_vencimiento.resx">
+      <DependentUpon>Visor_Vencimieto_fecha_vencimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SCRDataSet.xsc">
+      <DependentUpon>SCRDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SCRDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SCRDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SCRDataSet.xss">
+      <DependentUpon>SCRDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Vencimiento.xsc">
+      <DependentUpon>Vencimiento.xsd</DependentUpon>
+    </None>
+    <None Include="Vencimiento.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Vencimiento.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Vencimiento.xss">
+      <DependentUpon>Vencimiento.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Negocios\Negocios.csproj">
+      <Project>{80AFF228-34F5-444D-BE16-96F2C1010A48}</Project>
+      <Name>Negocios</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Imagenes\Img_Acept.png" />
+    <Content Include="Imagenes\Img_Buscar.png" />
+    <Content Include="Imagenes\Img_Cancelar %282%29.png" />
+    <Content Include="Imagenes\Img_Cancelar.png" />
+    <Content Include="Imagenes\Img_Escudo.ico" />
+    <Content Include="Imagenes\Img_Home.ico" />
+    <Content Include="Imagenes\Img_Imprimir.png" />
+    <Content Include="Imagenes\Img_Ingresar.png" />
+    <Content Include="Imagenes\Img_Key.ico" />
+    <Content Include="Imagenes\Img_Productos.ico" />
+    <Content Include="Imagenes\Img_Punto-Venta.ico" />
+    <Content Include="Imagenes\Img_Report.ico" />
+    <Content Include="Imagenes\Img_Supervisor.ico" />
+    <Content Include="Imagenes\Img_Usuarios.ico" />
+    <Content Include="Imagenes\Logo.jpg" />
+    <Content Include="Imagenes\Logo1 %281%29.jpg" />
+    <Content Include="Imagenes\Logo1.jpg" />
+    <Content Include="Imagenes\Logo_1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
