@@ -42,9 +42,9 @@
             this.grb_personales = new System.Windows.Forms.GroupBox();
             this.txt_cedula = new System.Windows.Forms.MaskedTextBox();
             this.grb_contacto = new System.Windows.Forms.GroupBox();
+            this.txt_telefono = new System.Windows.Forms.MaskedTextBox();
             this.btn_cancelar = new System.Windows.Forms.Button();
             this.btn_aceptar = new System.Windows.Forms.Button();
-            this.txt_telefono = new System.Windows.Forms.MaskedTextBox();
             this.grb_personales.SuspendLayout();
             this.grb_contacto.SuspendLayout();
             this.SuspendLayout();
@@ -151,7 +151,7 @@
             // txt_cedula
             // 
             this.txt_cedula.Location = new System.Drawing.Point(9, 49);
-            this.txt_cedula.Mask = "0000000000";
+            this.txt_cedula.Mask = "000000000";
             this.txt_cedula.Name = "txt_cedula";
             this.txt_cedula.Size = new System.Drawing.Size(222, 22);
             this.txt_cedula.TabIndex = 16;
@@ -168,6 +168,14 @@
             this.grb_contacto.TabIndex = 13;
             this.grb_contacto.TabStop = false;
             this.grb_contacto.Text = "Datos de Contacto";
+            // 
+            // txt_telefono
+            // 
+            this.txt_telefono.Location = new System.Drawing.Point(9, 50);
+            this.txt_telefono.Mask = "00000000";
+            this.txt_telefono.Name = "txt_telefono";
+            this.txt_telefono.Size = new System.Drawing.Size(165, 22);
+            this.txt_telefono.TabIndex = 12;
             // 
             // btn_cancelar
             // 
@@ -190,14 +198,6 @@
             this.btn_aceptar.TabIndex = 14;
             this.btn_aceptar.UseVisualStyleBackColor = true;
             this.btn_aceptar.Click += new System.EventHandler(this.btn_aceptar_Click);
-            // 
-            // txt_telefono
-            // 
-            this.txt_telefono.Location = new System.Drawing.Point(9, 50);
-            this.txt_telefono.Mask = "00000000";
-            this.txt_telefono.Name = "txt_telefono";
-            this.txt_telefono.Size = new System.Drawing.Size(165, 22);
-            this.txt_telefono.TabIndex = 12;
             // 
             // Mantenimiento_Supervisores
             // 

@@ -36,14 +36,14 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txt_correo = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txt_telefono = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txt_cedula = new System.Windows.Forms.MaskedTextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btn_cancelar = new System.Windows.Forms.Button();
             this.btn_aceptar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.txt_cedula = new System.Windows.Forms.MaskedTextBox();
+            this.txt_telefono = new System.Windows.Forms.MaskedTextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -107,14 +107,6 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "Telefono";
             // 
-            // txt_telefono
-            // 
-            this.txt_telefono.Location = new System.Drawing.Point(17, 47);
-            this.txt_telefono.Name = "txt_telefono";
-            this.txt_telefono.Size = new System.Drawing.Size(112, 22);
-            this.txt_telefono.TabIndex = 8;
-            this.txt_telefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_telefono_KeyPress);
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -137,10 +129,18 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos de identificacion";
             // 
+            // txt_cedula
+            // 
+            this.txt_cedula.Location = new System.Drawing.Point(9, 47);
+            this.txt_cedula.Mask = "000000000";
+            this.txt_cedula.Name = "txt_cedula";
+            this.txt_cedula.Size = new System.Drawing.Size(251, 22);
+            this.txt_cedula.TabIndex = 11;
+            // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.txt_telefono);
+            this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.txt_direccion);
             this.groupBox2.Controls.Add(this.label3);
@@ -185,13 +185,13 @@
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
             // 
-            // txt_cedula
+            // txt_telefono
             // 
-            this.txt_cedula.Location = new System.Drawing.Point(9, 47);
-            this.txt_cedula.Mask = "0000000000";
-            this.txt_cedula.Name = "txt_cedula";
-            this.txt_cedula.Size = new System.Drawing.Size(251, 22);
-            this.txt_cedula.TabIndex = 11;
+            this.txt_telefono.Location = new System.Drawing.Point(17, 47);
+            this.txt_telefono.Mask = "00000000";
+            this.txt_telefono.Name = "txt_telefono";
+            this.txt_telefono.Size = new System.Drawing.Size(112, 22);
+            this.txt_telefono.TabIndex = 10;
             // 
             // Mantenimiento_Punto_Venta_Cliente
             // 
@@ -229,7 +229,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txt_correo;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txt_telefono;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
@@ -237,5 +236,6 @@
         private System.Windows.Forms.Button btn_aceptar;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.MaskedTextBox txt_cedula;
+        private System.Windows.Forms.MaskedTextBox txt_telefono;
     }
 }

@@ -62,3 +62,6 @@ C:\Users\Usuario\source\repos\SCR\SCR\SCR\obj\Debug\RdlCompile.cache
 C:\Users\Usuario\source\repos\SCR\SCR\SCR\obj\Debug\RdlCompile.compiled
 C:\Users\Usuario\source\repos\SCR\SCR\SCR\obj\Debug\SCR.exe
 C:\Users\Usuario\source\repos\SCR\SCR\SCR\obj\Debug\SCR.pdb
+C:\Users\Usuario\source\repos\SCR\SCR\SCR\SCR\bin\Debug\SCR.exe.config
+C:\Users\Usuario\source\repos\SCR\SCR\SCR\SCR\obj\Debug\SCR.exe
+C:\Users\Usuario\source\repos\SCR\SCR\SCR\SCR\obj\Debug\SCR.pdb

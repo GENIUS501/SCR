@@ -239,7 +239,7 @@
             // txt_cedula
             // 
             this.txt_cedula.Location = new System.Drawing.Point(9, 52);
-            this.txt_cedula.Mask = "0000000000";
+            this.txt_cedula.Mask = "000000000";
             this.txt_cedula.Name = "txt_cedula";
             this.txt_cedula.Size = new System.Drawing.Size(179, 22);
             this.txt_cedula.TabIndex = 26;

@@ -129,7 +129,7 @@
             // txt_buscar_cedula
             // 
             this.txt_buscar_cedula.Location = new System.Drawing.Point(12, 35);
-            this.txt_buscar_cedula.Mask = "0000000000";
+            this.txt_buscar_cedula.Mask = "000000000";
             this.txt_buscar_cedula.Name = "txt_buscar_cedula";
             this.txt_buscar_cedula.Size = new System.Drawing.Size(134, 22);
             this.txt_buscar_cedula.TabIndex = 26;

@@ -109,7 +109,7 @@ namespace SCR
                                 #region Agregar
                                 if (Accion == "A")
                                 {
-                                    FilasAfectadas = Negocios.AgregarUsuarios(Usu,"User");
+                                    FilasAfectadas = Negocios.AgregarUsuarios(Usu,User);
                                     if(FilasAfectadas>0)
                                     {
                                         MessageBox.Show("Usuario Agregado exitosamente!!!", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -136,12 +136,12 @@ namespace SCR
                                 {
                                     if (contrasena == this.txt_clave.Text)
                                         {
-                                            FilasAfectadas = Negocios.Modificar_Usuario(Usu, "User");
+                                            FilasAfectadas = Negocios.Modificar_Usuario(Usu, User);
                                         }
                                     else
                                         {
                                             Usu.Clave = Helper.EncodePassword(string.Concat(this.txt_nombre_usuario.Text.ToString(), this.txt_clave.ToString()));
-                                            FilasAfectadas = Negocios.Modificar_Usuario_pass(Usu, "User");
+                                            FilasAfectadas = Negocios.Modificar_Usuario_pass(Usu, User);
                                         }
                                     if (FilasAfectadas > 0)
                                         {
