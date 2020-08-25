@@ -5,3 +5,10 @@ C:\Users\Usuario\source\repos\SCR\SCR\Negocios\bin\Debug\AccesoDatos.pdb
 C:\Users\Usuario\source\repos\SCR\SCR\Negocios\obj\Debug\Negocios.csprojResolveAssemblyReference.cache
 C:\Users\Usuario\source\repos\SCR\SCR\Negocios\obj\Debug\Negocios.dll
 C:\Users\Usuario\source\repos\SCR\SCR\Negocios\obj\Debug\Negocios.pdb
+C:\Users\Usuario\source\repos\SCR\SCR\SCR\Negocios\bin\Debug\Negocios.dll
+C:\Users\Usuario\source\repos\SCR\SCR\SCR\Negocios\bin\Debug\Negocios.pdb
+C:\Users\Usuario\source\repos\SCR\SCR\SCR\Negocios\bin\Debug\AccesoDatos.dll
+C:\Users\Usuario\source\repos\SCR\SCR\SCR\Negocios\bin\Debug\AccesoDatos.pdb
+C:\Users\Usuario\source\repos\SCR\SCR\SCR\Negocios\obj\Debug\Negocios.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\source\repos\SCR\SCR\SCR\Negocios\obj\Debug\Negocios.dll
+C:\Users\Usuario\source\repos\SCR\SCR\SCR\Negocios\obj\Debug\Negocios.pdb
